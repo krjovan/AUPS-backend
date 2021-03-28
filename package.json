@@ -14,7 +14,7 @@
   "author": "Nemanja Tesic, Jovan Kron",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/krjovan/AUPS-backend/issues"
+    "url": "https://github.com/krjovan/AUPS-backend//issues"
   },
   "homepage": "https://github.com/krjovan/AUPS-backend#readme",
   "dependencies": {
@@ -25,6 +25,7 @@
     "mongoose": "^5.11.12",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
+    "nodemailer": "^6.4.18",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
   }
