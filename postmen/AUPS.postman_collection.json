@@ -1,0 +1,853 @@
+{
+	"info": {
+		"_postman_id": "802773a4-ed0c-4e57-bde1-a5ca7f76f827",
+		"name": "AUPS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Articles",
+			"item": [
+				{
+					"name": "Articles Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/articles/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"articles",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Articles Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/articles/view/6062605cd9d74d21743b35c5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"articles",
+								"view",
+								"6062605cd9d74d21743b35c5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Articles Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"naslov\",\r\n    \"description\":\"neki opis\",\r\n    \"image\":\"slika\",\r\n    \"typeID\":null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/articles/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"articles",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Articles Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"_id\": \"6062605cd9d74d21743b35c5\",\r\n        \"name\": \"naslov\",\r\n        \"description\": \"neki opis\",\r\n        \"image\": \"slika2\",\r\n        \"typeID\": null,\r\n        \"__v\": 0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/articles/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"articles",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Articles Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/articles/delete/6062605cd9d74d21743b35c5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"articles",
+								"delete",
+								"6062605cd9d74d21743b35c5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delivers",
+			"item": [
+				{
+					"name": "Delivers Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/delivers/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"delivers",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delivers Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/delivers/view/60625fd29d86e0446cc6d845",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"delivers",
+								"view",
+								"60625fd29d86e0446cc6d845"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delivers Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\":100, \r\n    \"supplierId\":null,\r\n    \"articlesId\":null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/delivers/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"delivers",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delivers Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"_id\": \"60625fd29d86e0446cc6d845\",\r\n        \"price\": 101,\r\n        \"supplierId\": null,\r\n        \"articlesId\": null,\r\n        \"__v\": 0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/delivers/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"delivers",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delivers Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/delivers/delete/60625fd29d86e0446cc6d845",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"delivers",
+								"delete",
+								"60625fd29d86e0446cc6d845"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Orders Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/orders/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"orders",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Orders Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/orders/view/60625f616a4f4141dca255a9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"orders",
+								"view",
+								"60625f616a4f4141dca255a9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Orders Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cost\":100,\r\n    \"userID\":null,\r\n    \"deliversID\":null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/orders/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"orders",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Orders Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"Date\": \"2021-03-29T23:13:55.309Z\",\r\n        \"_id\": \"60625f616a4f4141dca255a9\",\r\n        \"cost\": 1001,\r\n        \"userID\": null,\r\n        \"deliversID\": null,\r\n        \"__v\": 0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/orders/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"orders",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Orders Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/orders/delete/60625f616a4f4141dca255a9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"orders",
+								"delete",
+								"60625f616a4f4141dca255a9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stocks",
+			"item": [
+				{
+					"name": "Stocks Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/stocks/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"stocks",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stocks Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/stocks/view/60625ed796189916949a2cda",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"stocks",
+								"view",
+								"60625ed796189916949a2cda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stocks Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"location\": \"Runjani\",\r\n    \"name\": \"Lokalno skladiste\",\r\n    \"address\":\"Bez imena\",\r\n    \"amount\":15,\r\n    \"minimumNeeded\":10,\r\n    \"maximum\":100,\r\n    \"articleID\":null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/stocks/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"stocks",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stocks Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"_id\": \"60625ed796189916949a2cda\",\r\n        \"location\": \"Runjanis\",\r\n        \"name\": \"Lokalno skladiste\",\r\n        \"address\": \"Bez imena\",\r\n        \"amount\": 15,\r\n        \"minimumNeeded\": 10,\r\n        \"maximum\": 100,\r\n        \"articleID\": null,\r\n        \"__v\": 0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/stocks/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"stocks",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stocks Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/stocks/delete/60625ed796189916949a2cda",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"stocks",
+								"delete",
+								"60625ed796189916949a2cda"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Supplier",
+			"item": [
+				{
+					"name": "Supplier Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/supplier/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"supplier",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Supplier Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/supplier/view/60625db755df303e0420c469",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"supplier",
+								"view",
+								"60625db755df303e0420c469"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Supplier Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Marko\",\r\n    \"phone\":\"32143124\",\r\n    \"location\":\"Loznica\",\r\n    \"address\":\"Luke Stevica\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/supplier/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"supplier",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Supplier Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"_id\": \"60625db755df303e0420c469\",\r\n        \"name\": \"Markso\",\r\n        \"phone\": \"32143124\",\r\n        \"location\": \"Loznica\",\r\n        \"address\": \"Luke Stevica\",\r\n        \"__v\": 0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/supplier/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"supplier",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Supplier Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/supplier/delete/60625db755df303e0420c469",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"supplier",
+								"delete",
+								"60625db755df303e0420c469"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Types",
+			"item": [
+				{
+					"name": "Type Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/types/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"types",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Type Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/types/view/6062588d55df303e0420c455",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"types",
+								"view",
+								"6062588d55df303e0420c455"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Type Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Svećica\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/types/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"types",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Type Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"6062588d55df303e0420c455\",\r\n    \"name\": \"Alats\",\r\n    \"__v\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/types/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"types",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Type Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/types/delete/60625bdd55df303e0420c45f",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"types",
+								"delete",
+								"60625bdd55df303e0420c45f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": []
+		}
+	]
+}

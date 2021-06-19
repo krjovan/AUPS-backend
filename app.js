@@ -13,6 +13,13 @@ var passport = require('passport');
 //ucitavamo servise
 const users=require('./routes/users');
 
+const articles=require('./routes/articles');
+const delivers=require('./routes/delivers');
+const orders=require('./routes/orders');
+const stocks=require('./routes/stocks');
+const supplier=require('./routes/supplier');
+const types=require('./routes/types');
+
 const app=express();
 //konektujemo se na bazu
 mongoose.connect(config.database,{ useNewUrlParser: true , useUnifiedTopology: true });
@@ -39,6 +46,13 @@ app.use(bodyParser.json());
 
 //navodimo nasted putanje iz servisa
 app.use('/users',users);
+
+app.use('/articles',articles);
+app.use('/delivers',delivers);
+app.use('/orders',orders);
+app.use('/stocks',stocks);
+app.use('/supplier',supplier);
+app.use('/types',types);
 
 
 app.get('**',(req,res)=>{
