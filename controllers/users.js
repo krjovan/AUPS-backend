@@ -158,11 +158,11 @@ module.exports.resetPassword = function(req, res) {
 		subject: 'Reset password',
 		html: `<p>Dear Sir or Madam,</p>
 			   <p>Your password was reset to: <b>${password}</b></p>
-			   <p>After you sign-in to e-residency please change the password from "My profile" section.</p>
-			   <p><i>If you have no connection to e-residency just ignore this email.</i></p>
-			   <p>E-residency team</p>
-			   <p>Email: contact@e-residency.com</p>
-			   <p>Web: <a href="http://localhost:4200/home">www.e-residency.com</a></p>`
+			   <p>After you sign-in to AUPS please change the password from "My profile" section.</p>
+			   <p><i>If you have no connection to AUPS just ignore this email.</i></p>
+			   <p>AUPS team</p>
+			   <p>Email: contact@aups.com</p>
+			   <p>Web: <a href="http://localhost:4200/home">www.aups.com</a></p>`
 	};
 	
 	transport.sendMail(mailOptions, function(err, info) {
